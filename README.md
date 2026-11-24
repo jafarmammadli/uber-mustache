@@ -14,6 +14,21 @@ This is a single html page where you can grab his mustache, fling it around, com
 - **grab his ears** and stretch them. they snap back
 - **double click** or hit **space** to make everything bounce
 - **click his face** to tickle him. he does not like it. he says so
+- **scroll** to grow the mustache. or shrink it, coward
+- **S** to make him sneeze. **T** to make him say the current quote out loud (badly)
+- **D** for disco mode, **E** for googly eyes, **G** to turn off gravity, **C** to dye the mustache
+- (all of those are buttons too, for phone people)
+
+## other faces
+
+Nietzsche is not the only one who deserves this.
+
+- **pick a photo from the dropdown** in the top right, or choose "+ add your own photo…", or just drag a photo onto the page
+- **to keep photos around**, drop them in the `photos/` folder and run `node add-photos.js`. they'll show up in the dropdown from then on
+
+The page finds the face (eyes, nose, mouth, chin, ears-ish) with MediaPipe and lines it up with where Nietzsche's face is, so the mustache, ears, tears and blushing all land in the right place. If it can't find a face it guesses, with confidence and no accuracy, like a philosopher.
+
+The face finder downloads a small model the first time you load a new photo, so that part needs internet. Nietzsche himself works offline.
 
 His mood changes on its own every few seconds. When he's sad the mustache droops and he starts crying. When he's happy the tips curl up and he blushes. When you tickle him he loses all philosophical composure.
 
